@@ -1,1 +1,1 @@
-//algoritmo para calcular masa corporal del usuario de la pagina web crossfitmadrid.
+algoritmo para calcular masa corporal del usuario de la pagina web crossfitmadrid.
