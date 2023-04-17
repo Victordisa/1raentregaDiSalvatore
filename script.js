@@ -3,11 +3,16 @@
 
 
 function imc(est, kg) {
-    kg=prompt("Diga su peso en kilogramos, diga terminar si desea salir: ");
-    kilogramos = parseFloat(kg);
-    est=prompt("Diga su estatura en centimetros: ");
-    est= parseFloat(est) / 100;
+    
     do {
+        kg=prompt("Diga su peso en kilogramos, diga terminar si desea salir: ");
+        kilogramos = parseFloat(kg);
+        if(kilogramos!=parseFloat(kg)){
+            alert("Gracias por usar nuestros servicios de Indice de masa corporal");
+            break;
+        }
+        est=prompt("Diga su estatura en centimetros: ");
+        est= parseFloat(est) / 100;
         let estaturaCuad= est ** 2;
         let indiceMasaCorporal= kilogramos / estaturaCuad;
         if(indiceMasaCorporal <= 16){
@@ -40,7 +45,7 @@ function imc(est, kg) {
             alert("Ud posee obesidad tipo 3, su imc es: " + indiceMasaCorporal);
         }
 
-    }while(kg=="terminar");
+    }while(parseFloat(kg));
 
 return imc;
 }
