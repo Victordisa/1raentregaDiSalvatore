@@ -2,7 +2,7 @@
 
 
 
-function imc(est, kg) {
+function IMC(est, kg) {
     
     do {
         kg=prompt("Diga su peso en kilogramos, diga terminar si desea salir: ");
@@ -47,6 +47,6 @@ function imc(est, kg) {
 
     }while(parseFloat(kg));
 
-return imc;
+return IMC;
 }
-imc();
+IMC();
